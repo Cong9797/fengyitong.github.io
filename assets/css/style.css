@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    color: #333;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+.logo img {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.next-page-link img {
+  margin-right: 1rem;
+  height: 50px;
+}
+
+main {
+    padding: 2rem;
+    background: #fff;
+    margin: 6rem auto 2rem; /* Adjust the top margin as needed 页眉和本体之间的间距*/
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between items as needed */
+    position: relative;
+}
+.portfolio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background-color: #000; /* Adjust the color of the line as needed */
+    transform: translateX(-50%);
+}
+  
+  
+.work-item {
+    flex: 1 1 calc(50% - 20px); /* Two columns with gap */
+    box-sizing: border-box;
+}
+  
+.work-item img {
+    width: 100%;
+    height: auto;
+}
+  
+.work-item p {
+    text-align: center;
+}
+  
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+footer p {
+    margin: 0.5rem 0;
+}
